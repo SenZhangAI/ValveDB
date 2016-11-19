@@ -6,13 +6,29 @@
         xmlns:local="clr-namespace:ValveDB"
         mc:Ignorable="d"
         Title="MainWindow" WindowState="Maximized">
+  <Window.Resources>
+    <Style x:Key="IconicFont">
+      <Setter Property="TextElement.FontFamily" Value="pack://application:,,,/Icons/#FontAwesome" />
+      <Setter Property="TextBlock.Width" Value="80" />
+      <Setter Property="TextBlock.Height" Value="80" />
+      <Setter Property="TextBlock.TextAlignment" Value="Center" />
+      <Setter Property="TextBlock.FontSize" Value="60" />
+      <Setter Property="TextBlock.Foreground" Value="#4F85BB" />
+    </Style>
+  </Window.Resources>
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="auto"></RowDefinition>
       <RowDefinition></RowDefinition>
     </Grid.RowDefinitions>
     <DockPanel Background="#F0F0F0" ToolTip="功能区">
-      <Button Margin="10" FontSize="16" Padding="6,3,6,3">提交</Button>
+      <Button Margin="3,0,3,0">
+        <Grid>
+          <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
+          <TextBlock Text="&#xf01b;" Style="{StaticResource IconicFont}"></TextBlock>
+          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16">提交</TextBlock>
+        </Grid>
+      </Button>
       <Button Margin="10" FontSize="16" Padding="6,3,6,3">修改</Button>
       <Button Margin="10" FontSize="16" Padding="6,3,6,3">删除</Button>
       <Button Margin="10" FontSize="16" Padding="6,3,6,3" DockPanel.Dock="Right">设置</Button>
