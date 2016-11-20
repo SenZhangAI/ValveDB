@@ -3,10 +3,9 @@
                     xmlns:local="clr-namespace:ValveDB">
   <Style x:Key="Icon-large">
     <Setter Property="TextElement.FontFamily" Value="pack://application:,,,/Icons/#FontAwesome" />
-    <Setter Property="TextBlock.Width" Value="80" />
-    <Setter Property="TextBlock.Height" Value="80" />
     <Setter Property="TextBlock.TextAlignment" Value="Center" />
-    <Setter Property="TextBlock.FontSize" Value="60" />
+    <Setter Property="TextBlock.FontSize" Value="32" />
     <Setter Property="TextBlock.Foreground" Value="#4F85BB" />
+    <Setter Property="TextBlock.Padding" Value="3,0,3,0" />
   </Style>
 </ResourceDictionary>

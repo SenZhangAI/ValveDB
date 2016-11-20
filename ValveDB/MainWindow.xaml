@@ -12,12 +12,12 @@
       <RowDefinition></RowDefinition>
     </Grid.RowDefinitions>
     <DockPanel Background="#F0F0F0" ToolTip="功能区">
-      <Button Margin="3,0,3,0">
-        <Grid>
+      <Button Padding="8,2,8,2" BorderThickness="0" Background="{x:Null}">
+        <StackPanel>
           <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
           <TextBlock Text="&#xf01b;" Style="{StaticResource Icon-large}"></TextBlock>
-          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16">提交</TextBlock>
-        </Grid>
+          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">提交</TextBlock>
+        </StackPanel>
       </Button>
       <Button Margin="10" FontSize="16" Padding="6,3,6,3">修改</Button>
       <Button Margin="10" FontSize="16" Padding="6,3,6,3">删除</Button>
