@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ValveDB">
+  <Style x:Key="ButtonWithIconDefalut" TargetType="Button">
+    <Style.Resources>
+      <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+          <ResourceDictionary Source="pack://application:,,,/Template/Buttons.xaml"></ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
+      </ResourceDictionary>
+    </Style.Resources>
+
+    <Setter Property="Control.Template"
+            Value="{StaticResource ButtonWithIcon}"></Setter>
+  </Style>
+</ResourceDictionary>

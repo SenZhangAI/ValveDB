@@ -11,6 +11,7 @@
       <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Styles\IconicStyle.xaml"/>
         <ResourceDictionary Source="Template\Buttons.xaml"/>
+        <ResourceDictionary Source="Styles\ButtonStyle.xaml"/>
       </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
   </Window.Resources>
@@ -28,6 +29,7 @@
         </StackPanel>
       </Button>
       <Button Template="{StaticResource ButtonWithIcon}" Tag="&#xf01b;">Test</Button>
+      <Button Style="{StaticResource ButtonWithIconDefalut}" Tag="&#xf01b;">Test</Button>
       <Button Margin="10" FontSize="16" Padding="6,3,6,3">修改</Button>
       <Button Margin="10" FontSize="16" Padding="6,3,6,3">删除</Button>
       <Button Margin="10" FontSize="16" Padding="6,3,6,3" DockPanel.Dock="Right">设置</Button>
