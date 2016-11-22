@@ -5,8 +5,82 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ValveDB"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" WindowState="Maximized">
+  <Window.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Styles\IconicStyle.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Window.Resources>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    <DockPanel Background="#F0F0F0" ToolTip="功能区">
+      <Button Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
+        <StackPanel>
+          <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
+          <TextBlock Text="&#xf01b;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">提交</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
+        <StackPanel>
+          <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
+          <TextBlock Text="&#xf040;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">修改</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
+        <StackPanel>
+          <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
+          <TextBlock Foreground="#D04437" Text="&#xf00d;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">删除</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button DockPanel.Dock="Right" Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
+        <StackPanel>
+          <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
+          <TextBlock Foreground="#707070" Text="&#xf013;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">设置</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button DockPanel.Dock="Right" Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
+        <StackPanel>
+          <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
+          <TextBlock Foreground="#707070" Text="&#xf007;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">用户</TextBlock>
+        </StackPanel>
+      </Button>
+      <TextBlock></TextBlock>
+    </DockPanel>
+    <Grid Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="200"></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <StackPanel ToolTip="视图选择窗口">
+        <Button Margin="10,10,10,5" Padding="6,3,6,3" FontSize="14">数据库</Button>
+        <Button Margin="10,5,10,5" Padding="6,3,6,3" FontSize="14">回收站</Button>
+      </StackPanel>
+      <Grid Grid.Column="1">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"></RowDefinition>
+          <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid ToolTip="数据区"></DataGrid>
+        <ListBox Grid.Row="1" ToolTip="明细区"></ListBox>
+        <GridSplitter Background="Red" Height="10" Opacity="0"
+                      HorizontalAlignment="Stretch" VerticalAlignment="Bottom"></GridSplitter>
+        <GridSplitter Grid.Row="1" Background="Red" Height="10" Opacity="0"
+                      HorizontalAlignment="Stretch" VerticalAlignment="Top"></GridSplitter>
+      </Grid>
+      <GridSplitter Background="Red" Width="10" Opacity="0"
+                      HorizontalAlignment="Right" VerticalAlignment="Stretch"></GridSplitter>
+      <GridSplitter Grid.Column="1" Background="Red" Width="10" Opacity="0"
+                      HorizontalAlignment="Left" VerticalAlignment="Stretch"></GridSplitter>
     </Grid>
+  </Grid>
 </Window>
