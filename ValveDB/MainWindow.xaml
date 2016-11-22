@@ -29,37 +29,31 @@
       <Button Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
         <StackPanel>
           <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
-          <TextBlock Text="&#xf01b;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock Text="&#xf040;" Style="{StaticResource Icon-large}"></TextBlock>
           <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">修改</TextBlock>
         </StackPanel>
       </Button>
       <Button Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
         <StackPanel>
           <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
-          <TextBlock Text="&#xf01b;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock Foreground="#D04437" Text="&#xf00d;" Style="{StaticResource Icon-large}"></TextBlock>
           <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">删除</TextBlock>
         </StackPanel>
       </Button>
-      <Button Margin="10" FontSize="16" Padding="6,3,6,3">修改</Button>
-      <Button Margin="10" FontSize="16" Padding="6,3,6,3">删除</Button>
       <Button DockPanel.Dock="Right" Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
         <StackPanel>
           <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
-          <TextBlock Text="&#xf013;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock Foreground="#707070" Text="&#xf013;" Style="{StaticResource Icon-large}"></TextBlock>
           <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">设置</TextBlock>
         </StackPanel>
       </Button>
       <Button DockPanel.Dock="Right" Padding="8,2,8,2" BorderThickness="0" Background="Transparent">
         <StackPanel>
           <!--the Unicode of FontAwesome can be found at <http://fontawesome.io/icon/> -->
-          <TextBlock Text="&#xf01b;" Style="{StaticResource Icon-large}"></TextBlock>
+          <TextBlock Foreground="#707070" Text="&#xf007;" Style="{StaticResource Icon-large}"></TextBlock>
           <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Padding="2,0,2,2">用户</TextBlock>
         </StackPanel>
       </Button>
-
-
-      <Button Margin="10" FontSize="16" Padding="6,3,6,3" DockPanel.Dock="Right">设置</Button>
-      <Button Margin="10" FontSize="16" Padding="6,3,6,3" DockPanel.Dock="Right">用户</Button>
       <TextBlock></TextBlock>
     </DockPanel>
     <Grid Grid.Row="1">
