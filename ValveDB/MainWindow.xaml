@@ -6,6 +6,13 @@
         xmlns:local="clr-namespace:ValveDB"
         mc:Ignorable="d"
         Title="MainWindow" WindowState="Maximized">
+  <Window.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Styles\IconicStyle.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Window.Resources>
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="auto"></RowDefinition>
