@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ValveDB">
+ 
+  <ControlTemplate x:Key="ButtonWithIcon" TargetType="{x:Type Button}">
+    <Border Name="Border">
+      <StackPanel>
+        <TextBlock Name="IconFont" 
+                   TextElement.FontFamily="pack://application:,,,/Icons/#FontAwesome" 
+                   Text="{TemplateBinding Button.Tag}">
+        </TextBlock>
+        <ContentPresenter Margin="{TemplateBinding Padding}"></ContentPresenter>
+      </StackPanel>
+    </Border>
+  </ControlTemplate>
+
+</ResourceDictionary>
